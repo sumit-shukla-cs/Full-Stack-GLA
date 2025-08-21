@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="jobApplication.css" />
+  </head>
+  <body>
+    <h2>Job Application Form</h2>
+
+    <form action="/jobApplication.html" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">First Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="First Name"
+          required
+        /><br /><br />
+
+        <label for="lastname">Last Name: </label>
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Last Name"
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone Number"
+          required
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Details</legend>
+
+        <label for="position">Position Applied For:</label>
+        <select id="position" name="position" required>
+          <option value="">-- Select Position --</option>
+          <option value="Software Engineer">Software Engineer</option>
+          <option value="Data Scientist">Data Scientist</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="System Analyst">System Analyst</option>
+          <option value="Other">Other</option></select
+        ><br /><br />
+
+        <label for="experience">Years of Experience:</label>
+        <input
+          type="number"
+          id="experience"
+          name="experience"
+          min="0"
+          placeholder="Years of Experience"
+        /><br /><br />
+
+        <label for="message">Cover Letter:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Write Something.."
+        ></textarea
+        ><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Availability</legend>
+
+        <label for="start_date">Available Start Date:</label>
+        <input
+          type="date"
+          id="start_date"
+          name="start_date"
+          required
+        /><br /><br />
+
+        <label for="availability">Availability:</label>
+        <select id="availability" name="availability" required>
+          <option value="">-- Select Availability --</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Contract">Contract</option>
+          <option value="Internship">Internship</option></select
+        ><br /><br />
+
+        <label>Willing to relocate?</label><br />
+        <input type="radio" id="yes" name="relocate" value="Yes" required />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="relocate" value="No" />
+        <label for="no">No</label>
+      </fieldset>
+
+      <br />
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
+</html>

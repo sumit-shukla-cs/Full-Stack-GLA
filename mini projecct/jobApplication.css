@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+form {
+  background: #fff;
+  max-width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 2px solid #1a73e8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fafbff;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+  color: #1a73e8;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #eef5ff;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+label[for="yes"],
+label[for="no"] {
+  display: inline-flex;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+button {
+  display: block;
+  width: 95%;
+  padding: 12px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #155ab6;
+}
