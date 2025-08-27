@@ -1,0 +1,228 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.header {
+  background: linear-gradient(50deg, #0077b6 50%, #3fcae6 100%);
+  color: #fff;
+  padding: 32px 0 16px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.header .welcome h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.header .welcome p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+nav .container > div a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background 0.2s, color 0.2s;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+nav .container > div a:hover {
+  background: #023e8a;
+  color: #fff;
+}
+
+hr {
+  border: none;
+  border-top: 1.5px solid #b5d0e6;
+  margin: 32px 0;
+}
+
+.about {
+  max-width: 700px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 28px;
+}
+
+.about h2 {
+  color: #0077b6;
+  margin-top: 0;
+}
+
+.about h3 {
+  color: #023e8a;
+  margin-bottom: 10px;
+}
+
+.about ul {
+  margin: 12px 0 0 20px;
+}
+
+.about li {
+  margin-bottom: 4px;
+}
+
+.tips {
+  margin-top: 24px;
+  background: #e0f7fa;
+  border-left: 4px solid #00b4d8;
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+
+.tips h4 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.schedule {
+  max-width: 700px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 28px;
+}
+
+.schedule h2 {
+  color: #0077b6;
+  margin-top: 0;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background: #f1faff;
+}
+
+.schedule th,
+.schedule td {
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.schedule th {
+  background: #caf0f8;
+  color: #023e8a;
+  font-weight: 600;
+}
+
+.schedule tr:nth-child(even) {
+  background: #e9f6fb;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 32px 28px;
+}
+
+.contact-form h2 {
+  color: #0077b6;
+  margin-top: 0;
+}
+
+.contact-form label {
+  font-weight: 500;
+  color: #023e8a;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  border: 1px solid #b5d0e6;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafd;
+  transition: border 0.2s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+  background: #023e8a;
+}
+
+.footer {
+  text-align: center;
+  padding: 18px 0;
+  background: #023e8a;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0 0 12px 12px;
+  margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+  .about,
+  .schedule,
+  .contact-form {
+    padding: 20px 8px;
+    margin: 18px 6px;
+  }
+  nav .container {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .welcome h1 {
+    font-size: 1.5rem;
+  }
+  .about,
+  .schedule,
+  .contact-form {
+    padding: 10px 2px;
+  }
+}
