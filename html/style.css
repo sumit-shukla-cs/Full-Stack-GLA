@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: aliceblue;
+}
+
+nav div {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #035a62;
+  padding: 10px;
+}
+body h2 {
+  text-align: center;
+  color: #035a62;
+  margin-top: 20px;
+}
+.iframe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.iframe iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.audio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 10px;
+}
